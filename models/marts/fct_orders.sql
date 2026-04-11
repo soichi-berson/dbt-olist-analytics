@@ -25,4 +25,16 @@ order_totals as (
 
 
 
-select * from order_totals
+select
+    orders.order_id,
+    orders.customer_id,
+    orders.order_status,
+    orders.order_purchase_timestamp,
+    orders.order_delivered_customer_date,
+    orders.order_estimated_delivery_date,
+    order_totals.total_payment_value,
+    order_totals.total_price,
+    order_totals.total_freight_value,
+    order_totals.total_items
+from orders
+left join order_totals using (order_id)
