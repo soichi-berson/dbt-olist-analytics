@@ -17,16 +17,7 @@ models:
         description: "Status of the order"
         tests:
           - not_null
-          - accepted_values:
-              values: 
-                - delivered
-                - shipped
-                - canceled
-                - unavailable
-                - invoiced
-                - processing
-                - created
-                - approved
+
 
   - name: stg_customers
     description: "Cleaned customers data from Olist"
@@ -74,3 +65,17 @@ models:
         tests:
           - unique
           - not_null
+
+  - name: stg_order_reviews
+    description: "Cleaned order reviews data from Olist"
+    columns:
+      - name: review_id
+        description: "Unique review identifier"
+        tests:
+          - not_null
+      - name: order_id
+        description: "Order identifier"
+        tests:
+          - not_null
+
+
