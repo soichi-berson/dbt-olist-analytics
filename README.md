@@ -10,7 +10,7 @@ clean, joined, and analytics-ready models following industry best practices in a
 ## Data Source
 
 Dataset: [Brazilian E-Commerce Public Dataset by Olist (Kaggle)](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)  
-License: [Creative Commons CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 
 ## Objective
 
