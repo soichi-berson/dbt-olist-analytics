@@ -1,4 +1,4 @@
-# Olist E-Commerce Analytics — dbt + BigQuery Portfolio Project
+# Olist E-Commerce Analytics — dbt + BigQuery Project
 
 ## Introduction
 
