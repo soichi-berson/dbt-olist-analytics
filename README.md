@@ -1,4 +1,4 @@
-# Olist E-Commerce Analytics — dbt + BigQuery Project
+# dbt Analytics Engineering — Olist E-Commerce Data Modelling 
 
 ## Introduction
 
