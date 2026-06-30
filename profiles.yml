@@ -1,0 +1,83 @@
+user:
+  outputs:
+    default:
+      keyfile_json:
+        auth_provider_x509_cert_url: https://www.googleapis.com/oauth2/v1/certs
+        auth_uri: https://accounts.google.com/o/oauth2/auth
+        client_email: dbt-service-account@dbt-portfolio-493011.iam.gserviceaccount.com
+        client_id: '114934781035762165373'
+        client_x509_cert_url: https://www.googleapis.com/robot/v1/metadata/x509/dbt-service-account%40dbt-portfolio-493011.iam.gserviceaccount.com
+        private_key: '-----BEGIN PRIVATE KEY-----
+
+          MIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDAd/KsJhaCCjVx
+
+          vZCRD9KtVrb28JWYaBFEesPNyKYnoWxt/Z36scb+mpQp1gFidFu+cEA4CE6T1DUW
+
+          H8LS6BZl2vD0jof5BJ1PjW6Ltu/6lUUpOjoYwHWh05sN80ZWftxoTBvIygr8vs3K
+
+          G0KZ9HAx+fs6OW9H7YWNr5p1QO17izlEDsT7W5IYeGIDEQdU2KcL6JnnUJQSsoRV
+
+          usua+aaCouOJoh7R+xqRE4Zu2xGK6uhLmEOpO3CO6sD1yoPXEEa/PxaQY2PU+iwB
+
+          Yk8i1vbwQBs93oP/gj2f9DaBvqKsCcQLnjUBbVLUPw7/gWE0pvCmnilwDgvq5I8G
+
+          e4MMMqiVAgMBAAECggEAEw2cwqF3n3JyxXp6Xf3mwX2g2bPJ319H/FM54HyBRFGU
+
+          2hOeCMQCGtDDI5wZoX062tCibtmVq8k5YyIMR5QtqXIh4dfdSo/EIeyymZanzZLq
+
+          2JC40Rv2WSmJQzmGyEfBOnr0Ui18JnaeCSinMHX0CGKClgo7A7AWBUdxvzNI/y6G
+
+          HbYCE+l+5d1vhLCDfvv4vHXH3fV3+SR7z1SPq75W5tZsJpAodeXq54cdnUJ4f+gI
+
+          537j7aHVnjy+2QfiTPOycYKFbsuX/3gaTKD5aTncu11hBQJnD4qFvowZZRsvgwiN
+
+          NswIwG2XHQgjir50dcnk0wqk3lO80kOfysVdhUzeEQKBgQD6V6iV8mcH5g1Dzy/J
+
+          TcZ/SWMNOYPRaaZQ2c02o1GDRpWCZc/Gk033MeMYCJYi2hmSXA8MbY9QTtmN5l0/
+
+          1B4tl9WyAbv5HWrP8i/0YIWqQbhkIgpghFSIYhSeL+skQDy8fZ1Akn53x0376aP8
+
+          7gT1LKYStLHxzLWWAckOJmQ1cQKBgQDE0XaoBPUFVY2ot+2V7C5Pel7Js9+Gm/f9
+
+          eNr3kr/5mS6xcwsJVaLqjZUQ1llhsuDKlcjn0i2j5HfygRveUoPLeIVhn/IheARn
+
+          capoKs3VcAhYo3FAaqvqhz5jOrW6LE8TmH1yK72Zb3DrMm7oiuwaACGBKetuUD1G
+
+          PmPInP1DZQKBgEMPwGWKrfb7tYn4soBmiUoHyrT8N0ed2aPG9KYyUd+sxNhNlb9I
+
+          LpaNkpwZkL59VmRSrOVTZBTLSpQspcY3eG4WQnSQ6l3td3OFGTuJr8TQHikUxVrd
+
+          mBeAzq0hgQgQ/TQxIjLuC1ri1Q0qpXdX+5QCBer05MY1ZF9u0wErX6TBAoGARSUR
+
+          epXDPsx/p/Z2EWWYH3PuOQ5oSPIifXon8zIrH5UhQlYYWn8rbRuwcunbHOeq8YEN
+
+          w+OjBSEOwrN5BvIWOzVsJo/6kKeJZI4aP95J0eI6DGnfL7JKE2rQECxgC7flUA0S
+
+          hTm4sl7kXLyrGic0Ky5AlxATFf46iKMCi0gb8cECgYBk3CY0zY2sz8Zm/f29LOLF
+
+          bLRdDlIkXW+zPl8Eyk7VhP1Vx1G7Yyt4MZ7PBs8//PxBEM+/fLvvcY8h6kfqP2vj
+
+          svgcWtAszBxBfH7KQZtsonr+cy+7Ce9akEyGIBUVQEIOe6lrvmmNdFaWo39brwf9
+
+          YeemHVfBMCJMMZA4c6I+PQ==
+
+          -----END PRIVATE KEY-----
+
+          '
+        private_key_id: 1e8f467732d3ff1b1a464a38de0fb351f5128f65
+        project_id: dbt-portfolio-493011
+        token_uri: https://oauth2.googleapis.com/token
+        type: service_account
+      location: EU
+      method: service-account-json
+      project: dbt-portfolio-493011
+      schema: dbt_olist
+      scopes:
+      - https://www.googleapis.com/auth/bigquery
+      - https://www.googleapis.com/auth/cloud-platform
+      - https://www.googleapis.com/auth/drive
+      - https://www.googleapis.com/auth/userinfo.email
+      target_name: default
+      threads: 4
+      type: bigquery
+  target: default
