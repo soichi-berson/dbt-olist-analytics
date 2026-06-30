@@ -32,9 +32,9 @@ select
     orders.order_purchase_timestamp,
     orders.order_delivered_customer_date,
     orders.order_estimated_delivery_date,
-    order_totals.total_payment_value,
-    order_totals.total_price,
-    order_totals.total_freight_value,
-    order_totals.total_items
+    {{ coalesce_columns(['order_totals.total_payment_value']) }} as total_payment_value,
+    {{ coalesce_columns(['order_totals.total_price']) }} as total_price,
+    {{ coalesce_columns(['order_totals.total_freight_value']) }} as total_freight_value,
+    {{ coalesce_columns(['order_totals.total_items']) }} as total_items
 from orders
 left join order_totals using (order_id)

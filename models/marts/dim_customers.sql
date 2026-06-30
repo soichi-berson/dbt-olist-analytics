@@ -19,9 +19,11 @@ select
     customers.customer_city,
     customers.customer_state,
     customers.customer_zip_code_prefix,
-    coalesce(orders.total_orders, 0) as total_orders,
-    coalesce(orders.delivered_orders, 0) as delivered_orders,
-    coalesce(orders.cancelled_orders, 0) as cancelled_orders,
-    round(coalesce(orders.total_spent, 0),2) as total_spent
+    {{ coalesce_columns(['orders.total_orders']) }} as total_orders,
+    {{ coalesce_columns(['orders.delivered_orders']) }} as delivered_orders,
+    {{ coalesce_columns(['orders.cancelled_orders']) }} as cancelled_orders,
+    round({{ coalesce_columns(['orders.total_spent']) }}, 2) as total_spent
+
+
 from customers
 left join orders using (customer_id)

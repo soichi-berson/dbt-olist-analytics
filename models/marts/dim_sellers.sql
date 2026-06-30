@@ -27,7 +27,7 @@ select
     sellers.seller_id,
     sellers.seller_city,
     sellers.seller_state,
-    coalesce(seller_stats.total_orders, 0) as total_orders,
-    coalesce(seller_stats.avg_review_score, 0) as avg_review_score
+    {{ coalesce_columns(['seller_stats.total_orders']) }} as total_orders,
+    {{ coalesce_columns(['seller_stats.avg_review_score']) }} as avg_review_score
 from sellers
 left join seller_stats using (seller_id)
