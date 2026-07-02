@@ -1,0 +1,30 @@
+version: 2
+
+macros:
+  - name: cents_to_dollars
+    description: "Converts a numeric column from cents to a rounded dollar value."
+    arguments:
+      - name: column_name
+        type: string
+        description: "The column containing a value in cents."
+      - name: decimal_places
+        type: integer
+        description: "Number of decimal places to round to. Defaults to 2."
+
+  - name: clean_string
+    description: "Lowercases and trims whitespace from a string column. Applied to city and state fields in staging models."
+    arguments:
+      - name: column_name
+        type: string
+        description: "The string column to clean."
+
+  - name: coalesce_columns
+    description: "Generates a COALESCE expression dynamically across a list of columns using a Jinja for-loop."
+    arguments:
+      - name: columns
+        type: list
+        description: "List of column names to coalesce."
+      - name: default
+        type: integer
+        description: "Fallback value if all columns are null. Defaults to 0."
+
